@@ -1,0 +1,32 @@
+﻿<Window x:Class="BWInf39_A1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BWInf39_A1"
+        mc:Ignorable="d"
+        Title="BWInf 39, A1" SizeToContent="WidthAndHeight">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Label>Rätsel eingeben: </Label>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <Label Height="25">Lücken:</Label>
+                        <Label Height="25">Wörter:</Label>
+                    </StackPanel>
+                <StackPanel Orientation="Vertical">
+                        <TextBox Name="RätselLuecken"  Height="25" Width="300" MaxLines="2" />
+                        <TextBox Name="RätselWoerter"  Height="25" Width="300" MaxLines="2" />
+                </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Label>Lösung: </Label>
+                <TextBox IsReadOnly="True" Name="Antwort" MinWidth="300"></TextBox>
+            </StackPanel>
+            <Button Name="Button_Solution" Click="Button_Solution_Click" Width="80" Margin="10">Rätsel lösen</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>
